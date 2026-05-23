@@ -8,6 +8,8 @@
 > npx shadcn@latest init
 >
 > sidebar avatar dropdown-menu next-theme
+>
+> https://github.com/safak/e-commerce-ui
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
