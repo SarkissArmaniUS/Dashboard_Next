@@ -2,6 +2,8 @@
 import { ChartContainer, ChartLegend, ChartLegendContent, ChartTooltip, ChartTooltipContent, type ChartConfig } from "@/components/ui/chart";
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
+import Fetching from "./Fetching";
+
 const chartConfig = {
   desktop: {
     label: "Desktop",
@@ -48,6 +50,7 @@ const AppBarChart = () => {
           <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
         </BarChart>
       </ChartContainer>
+      <Fetching />
     </div>
   );
 };
