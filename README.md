@@ -1,6 +1,6 @@
 ⚠️ Project Status: Under Construction / Work in Progress
 
-# Admin Dashboard — `admin/`
+# Admin Dashboard
 
 A modern admin dashboard frontend built inside the `admin/` folder. This workspace contains the full Next.js admin UI, ready for database and API integration.
 
