@@ -2,8 +2,6 @@
 import { ChartContainer, ChartLegend, ChartLegendContent, ChartTooltip, ChartTooltipContent, type ChartConfig } from "@/components/ui/chart";
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
-import Fetching from "./Fetching";
-
 const chartConfig = {
   desktop: {
     label: "Desktop",
@@ -15,7 +13,6 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-// What's structure of Dashboar? For example this data comes from api/index.js wich comes from server side or there's some data wich we r getting and analys on client side?
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
   { month: "February", desktop: 305, mobile: 200 },
@@ -50,7 +47,6 @@ const AppBarChart = () => {
           <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
         </BarChart>
       </ChartContainer>
-      <Fetching />
     </div>
   );
 };

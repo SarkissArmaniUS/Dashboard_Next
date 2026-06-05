@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/AppSidebar";
@@ -46,7 +45,6 @@ export default function RootLayout({
             <main className="w-full">
               <Navbar />
               <div className="px-4">{children}</div>
-              <Footer />
             </main>
           </SidebarProvider>
         </ThemeProvider>
