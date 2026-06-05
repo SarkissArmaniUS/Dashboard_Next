@@ -1,49 +1,117 @@
-⚠️ Project Status: Under Construction / Work in Progress**
+⚠️ Project Status: Under Construction / Work in Progress
 
->   No, reuse previous settings
-    TypeScript, ESLint, No React Compiler,
-   Tailwind CSS, src/ directory, App Router, No
-   AGENTS.md
->
-> npx shadcn@latest init
->
-> sidebar avatar dropdown-menu next-theme
->
-> https://github.com/safak/e-commerce-ui
+# Admin Dashboard — `admin/`
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+A modern admin dashboard frontend built inside the `admin/` folder. This workspace contains the full Next.js admin UI, ready for database and API integration.
 
-## Getting Started
+---
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### **Admin Frontend**
+- 📊 **Dashboard Overview** - Charts and data summaries for admin insights
+- 🧑‍💼 **Users Management** - User list with table and controls
+- 📦 **Products Management** - Product list with table layout
+- 🛒 **Orders Management** - Order list view with filtering
+- ➕ **CRUD Components** - Add user, add product, add category, add order forms
+- 🎨 **Responsive UI** - Mobile-friendly admin interface
+- 🌗 **Theme Support** - Light/dark mode via `next-themes`
+- 📈 **Charts** - Recharts-based visualizations
+- 🪟 **Modern UI** - shadcn-style component system and Tailwind CSS
+
+---
+
+## 🧩 Sections
+
+- `src/app/layout.tsx` — root layout
+- `src/app/page.tsx` — admin home dashboard
+- `src/app/users/page.tsx` — users table
+- `src/app/products/page.tsx` — products table
+- `src/app/payments/page.tsx` — orders/payments table
+- `src/components/` — reusable admin UI components
+- `public/` — static assets for admin UI
+
+---
+
+## 🛠 Tech Stack
+
+### **Frontend (Admin)**
+- **Framework**: Next.js 16.2.6
+- **Language**: TypeScript 5
+- **UI**: React 19.2.4
+- **Styling**: Tailwind CSS 4 + PostCSS
+- **Charts**: Recharts
+- **Tables**: `@tanstack/react-table`
+- **Theme**: next-themes
+- **Icons**: Lucide React
+- **Date UI**: React Day Picker
+- **Linting**: ESLint 9
+
+---
+
+## 📁 Project Structure
+
+```
+admin/
+├── public/
+├── src/
+│   ├── app/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── users/
+│   │   │   └── page.tsx
+│   │   ├── products/
+│   │   │   └── page.tsx
+│   │   └── payments/
+│   │       └── page.tsx
+│   ├── components/
+│   │   ├── AddCategory.tsx
+│   │   ├── AddOrder.tsx
+│   │   ├── AddProduct.tsx
+│   │   ├── AddUser.tsx
+│   │   ├── AppAreaChart.tsx
+│   │   ├── AppBarChart.tsx
+│   │   ├── AppPieChart.tsx
+│   │   ├── AppSidebar.tsx
+│   │   ├── CardList.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── TablePagination.tsx
+│   │   ├── TodoList.tsx
+│   │   └── ui/
+│   │       └── design system components
+│   └── hooks/
+│       └── use-mobile.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚧 Current Status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ✅ Completed
+- Admin dashboard frontend shell
+- Table-driven users/products/orders pages
+- Add-item modal forms
+- Responsive layout and navigation
+- Themed UI with charts and sidebar
+- Local UI-ready admin experience
 
-## Learn More
+### 🔄 In Progress
+- Backend API integration
+- Database connection
+- Real data CRUD flows
+- Authentication and admin permissions
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+cd admin
+npm install
+npm run dev
+```
 
-## Deploy on Vercel
+Open `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Note: The admin dashboard currently uses frontend/demo-ready components and placeholder UI. Backend data and API integration will be connected next.
